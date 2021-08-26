@@ -116,7 +116,7 @@ alias ll='ls -alF'
 alias la='ls -A'                                                                                               
 alias l='ls -CF'                                                                                               
 alias cdc='cd /mnt/c/Users/chrharw; ll'                                                                        
-alias cdp='cd /mnt/c/Users/chrharw/OneDrive\ -\ CDW/Project\ Files; ll'                                        
+alias cdp='cd /mnt/c/Users/chrharw/Projects'
 alias cdd='cd /mnt/c/Users/chrharw/Downloads'                                                                  
                                                                                                                
 # Navigation variables                                                                                         
