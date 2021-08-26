@@ -1,5 +1,9 @@
 set nocompatible
 
+" TO INSTALL BEFORE USING:
+" Pathogen, https://github.com/tpope/vim-pathogen
+" monokai colorscheme
+
 " CONFIGURE AND ENABLE PATHOGEN
 " To disable a plugin, add a ~ to the end of the directory name
 execute pathogen#infect()
@@ -19,8 +23,6 @@ if &term =~ '256color'
 
   " Themes available in ~/.vim/colors/
   " - Solarized colorschemes fall well outside the xterm's 256 color palette
-  " colorscheme solarized
-  " colorscheme solarized8
   colorscheme monokai
 
 endif
