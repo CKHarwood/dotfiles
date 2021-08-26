@@ -1,0 +1,77 @@
+set nocompatible
+
+" CONFIGURE AND ENABLE PATHOGEN
+" To disable a plugin, add a ~ to the end of the directory name
+execute pathogen#infect()
+
+
+" MAP <LEADER> TO COMMA
+let mapleader=","
+
+" THEME SELECTION AND WSL COLOR CONTROLS
+if &term =~ '256color'
+
+  " Solve the BCE/WSL issue described at https://sunaku.github.io/vim-256color.bce.html
+  set term=screen-256color
+  set t_ut=
+
+  set background=dark
+
+  " Themes available in ~/.vim/colors/
+  " - Solarized colorschemes fall well outside the xterm's 256 color palette
+  " colorscheme solarized
+  " colorscheme solarized8
+  colorscheme monokai
+
+endif
+
+" SYNTAX AND BRACKET HIGHLIGHTING
+filetype plugin on
+syntax on
+set showmatch
+set mat=2
+
+" USER INTERFACE
+set number "Show line numbers in left-hand column.
+set ruler "Show line number and cursor position in lower right.
+set showcmd
+set cursorline "Highlight the current line
+set scrolloff=5 "Show at least five lines above/below cursor position
+set colorcolumn=80 "Highlight ideal EOL limit
+
+" ALLOW BACKSPACE KEY TO REMOVE :
+"   Automated indentations
+"   Line break (end of line) characters
+"   Characters before the start of the current insert
+set backspace=indent,eol,start
+
+" INDENTATION
+filetype indent on
+set tabstop=2
+set softtabstop=2
+set expandtab "Replace tab key with spaces to tabstop
+set shiftwidth=2 "Set width interpreted as an indent to 2
+set linebreak "Soft wrap text without breaking words or adding newlines
+
+" LINE FOLDING
+set foldenable
+set foldmethod=indent
+set foldlevelstart=5 "When opening a file, fold everything > 5 levels
+set foldcolumn=1
+
+" SEARCH HIGHLIGHTING
+set hlsearch
+set incsearch
+" Comma, Space resets the search highlights
+nnoremap <leader><space> :nohlsearch<CR>
+
+" DISPLAY AUTOCOMPLETE OPTIONS
+set wildmenu
+
+"PERFORMANCE SETTINGS
+set lazyredraw
+
+" Highlight search results, AJAX-y incremental search results
+set hlsearch
+set incsearch
+
