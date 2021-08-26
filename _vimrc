@@ -1,0 +1,89 @@
+set nocompatible
+
+" CONFIGURE AND ENABLE VUNDLE
+" Clear GVim's filetype plugins cache (required for Vundle)
+" ! Reactivate filetype detection later in the .vimrc
+filetype off
+
+" Make GVim play nice with Windows slashes
+" https://stackoverflow.com/a/18467407/2188260
+set shellslash
+
+" Tell GVim where to find Vundle functions
+set rtp+=~/vimfiles/bundle/Vundle.vim
+call vundle#begin('~/vimfiles/bundle')
+
+" VUNDLE PLUGINS LIST
+" ! After adding a plugin, run these commands:
+"   source %
+"   PluginInstall
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+" Solarized color shceme
+Plugin 'altercation/vim-colors-solarized'
+" Molokai color scheme
+Plugin 'tomasr/molokai'
+
+" LOAD VUNDLE PLUGINS LISTED ABOVE
+call vundle#end()
+
+" MAP <LEADER> TO COMMA
+let mapleader=","
+
+" THEME SELECTION & GVIM COLOR CONTROLS
+set background=dark
+colorscheme solarized
+set guifont=Consolas:h11
+
+" SYNTAX AND BRACKET HIGHLIGHTING
+filetype plugin on
+syntax on
+set showmatch "When creating a brace, briefly show the matching brace
+set mat=2
+
+" USER INTERFACE ELEMENTS
+set number "Show line numbers in left-hand gutter
+set ruler "Show cursor position in command row
+set showcmd "Show command characters typed in command row
+set cursorline "Highlight the current line
+set scrolloff=5 "Show at least five lines above/below cursor position
+set colorcolumn=80 "Highlight ideal EOL limit
+
+" ALLOW BACKSPACE KEY TO REMOVE :
+"   Automated indentations
+"   Line break (end of line) characters
+"   Characters before the start of the current insert
+set backspace=indent,eol,start
+
+" INDENTATION
+filetype indent on
+set tabstop=2
+set softtabstop=2
+set expandtab "Replace tab key with spaces to tabstop
+set shiftwidth=2 "Set width interpreted as an indent to 2
+set linebreak "Soft wrap text without breaking words or adding newlines
+
+" LINE FOLDING
+set foldenable
+set foldmethod=indent "Fold based on code indentation
+set foldlevelstart=5 "On file open, fold everything > 5 levels
+set foldcolumn=1 "Set one column to indicate fold information
+
+" SEARCH HIGHLIGHTING
+set hlsearch
+set incsearch
+" Comma, Space resets the search highlights
+nnoremap <leader><space> :nohlsearch<CR>
+
+" DISPLAY AUTOCOMPLETE OPTIONS
+set wildmenu
+
+" NOTES
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
