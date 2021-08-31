@@ -6,14 +6,14 @@ Minor bugfixes and color support.
 
 ## Custom aliases
 
-ll: List all files in long format with forward slashes indicating subfolders (ls -alF)
+* `ll`: List all files in the present working directory in long format, with forward slashes indicating subfolders (ls -alF)
 
-ls: List all files except . and .. (ls -A)
+* `la`: List all files in the present working directory (ls -a)
 
-l:  List files in columns with forward slashes to indicate subfolders (ls -CF)
+* `l`:  List visible files in the present working directory by column, with forward slashes to indicate subfolders (ls -CF)
 
-cdc: Windows %userprofile% folder in mounted drive
+* `cdc`: Windows %userprofile% folder in mounted drive
 
-cdp: %userprofile%/Projects
+* `cdp`: %userprofile%/Projects
 
-cdd: %userprofile%/Downloads
+* `cdd`: %userprofile%/Downloads
