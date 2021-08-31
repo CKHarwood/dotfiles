@@ -113,8 +113,8 @@ fi
 
 # some more ls aliases                                                                                         
 alias ll='ls -alF'                                                                                             
-alias la='ls -A'                                                                                               
-alias l='ls -CF'                                                                                               
+alias l='ls -A'                                                                                               
+alias la='ls -CF'                                                                                               
 alias cdc='cd /mnt/c/Users/chrharw; ll'                                                                        
 alias cdp='cd /mnt/c/Users/chrharw/Projects'
 alias cdd='cd /mnt/c/Users/chrharw/Downloads'                                                                  
