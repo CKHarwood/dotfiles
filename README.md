@@ -17,3 +17,8 @@ Minor bugfixes and color support.
 * `cdp`: %userprofile%/Projects
 
 * `cdd`: %userprofile%/Downloads
+
+# MYVIMRC
+
+* `.vimrc-WSL`: Run controls for a WSL command-line environment
+* `_vimrc-Win`: Run controls for gVim in Windows
