@@ -24,6 +24,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 " Molokai color scheme
 Plugin 'tomasr/molokai'
+" Graphviz functions
+" Plugin 'wannesm/wmgraphviz.vim' cannot handle spaces in filenames
+" Plugin 'liuchengxu/graphviz.vim' cannot handle spaces in filenames
 
 " LOAD VUNDLE PLUGINS LISTED ABOVE
 call vundle#end()
