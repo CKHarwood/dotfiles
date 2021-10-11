@@ -119,6 +119,20 @@ alias cdc='cd /mnt/c/Users/chrharw && ll'
 alias cdp='cd /mnt/c/Users/chrharw/Projects'
 alias cdd='cd /mnt/c/Users/chrharw/Downloads'                                                                  
                                                                                                                
+# Pretty print git logs
+function gitlog() {
+  command git log --graph --abbrev-commit --decorate --format=format:'%C(blue)%h %C(bold green)(%ar)%C(bold yellow)%d %C(white)%s %C(dim 115)(%an)%C(reset)' --all
+}
+
+# Not sure why bash calls out an error on this function
+# function git() {
+#   if [[ $@ == "log -compact"]]; then
+#     command git log --graph --abbrev-commit --decorate --format=format:'%C(blue)%h %C(bold green)(%ar)%C(bold yellow)%d %C(white)%s %C(dim 115)(%an)%C(reset)' --all
+#   else
+#     command git "$@"
+#   fi
+# }
+
 # Navigation variables                                                                                         
 CDC='/mnt/c/Users/chrharw'                                                                                     
 PROJECT_FILES='/mnt/c/Users/chrharw/OneDrive - CDW/Project Files'                                              
