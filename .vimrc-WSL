@@ -33,6 +33,9 @@ syntax on
 set showmatch
 set mat=2
 
+" RECOGNIZE GV FILE SYNTAX
+autocmd BufNewFile,BufRead *gv set syntax=dot
+
 " USER INTERFACE
 set number "Show line numbers in left-hand column.
 set ruler "Show line number and cursor position in lower right.
