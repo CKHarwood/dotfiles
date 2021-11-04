@@ -44,6 +44,7 @@ filetype plugin on
 syntax on
 set showmatch "When creating a brace, briefly show the matching brace
 set mat=2
+au BufRead,BufNewFile *.gvf setfiletype dot
 
 " USER INTERFACE ELEMENTS
 set number "Show line numbers in left-hand gutter
