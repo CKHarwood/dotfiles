@@ -1,24 +1,33 @@
 # dotfiles
 Dotfiles are stored here and hard linked to the appropriate path directories where possible. In some cases it is necessary to copy files over and keep them in sync manually.
 
-# .bashrc
-Minor bugfixes and color support.
+## .bashrc
+Startup *Bash r*un *c*ommands. Documented in-file. Hard link: `~/.bashrc`.
 
-## Custom aliases
+This file may be over-customized for WSL today.
 
-* `ll`: List all files in the present working directory in long format, with forward slashes indicating subfolders (ls -alF)
+### Custom aliases and commands set in `.bashrc`
 
-* `la`: List all files in the present working directory (ls -a)
+* `ll`: List all files in the present working directory in long format, with forward slashes indicating subfolders (`ls -alF`)
 
-* `l`:  List visible files in the present working directory by column, with forward slashes to indicate subfolders (ls -CF)
+* `la`: List all files in the present working directory (`ls -a`)
 
-* `cdc`: Windows %userprofile% folder in mounted drive
+* `l`:  List visible files in the present working directory by column, with forward slashes to indicate subfolders (`ls -CF`)
 
-* `cdp`: %userprofile%/Projects
+* `gitlog`: Print a pretty git log.
 
-* `cdd`: %userprofile%/Downloads
+#### Windows Subsystem for Linux (WSL) aliases
 
-# MYVIMRC
+* `cdc`: `cd` into Windows `%userprofile%` folder
 
-* `.vimrc-WSL`: Run controls for a WSL command-line environment
-* `_vimrc-Win`: Run controls for gVim in Windows
+* `cdp`: `cd %userprofile%/Projects`
+
+* `cdd`: `cd %userprofile%/Downloads`
+
+## .dircolors
+In my .bashrc, the dircolors command sets up color output for ls and grep. The colors settings are stored in ~/.dircolors. Hard link: ~/.dircolors. 
+
+## MYVIMRC
+
+* `.vimrc-WSL`: Startup run commands for vim in a Windows Subsystem for Linux (WSL) command-line environment
+* `_vimrc-Win`: Startup run commands for gVim in Windows
