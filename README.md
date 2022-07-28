@@ -31,3 +31,4 @@ In my .bashrc, the dircolors command sets up color output for ls and grep. The c
 
 * `.vimrc-WSL`: Startup run commands for vim in a Windows Subsystem for Linux (WSL) command-line environment
 * `_vimrc-Win`: Startup run commands for gVim in Windows
+
