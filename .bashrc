@@ -111,6 +111,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Add Sass to PATH
+export PATH=/home/keitaro/dart-sass:$PATH"
+
 # some more ls aliases                                                                                         
 alias ll='ls -alF'                                                                                             
 alias l='ls -CF'                                                                                               
