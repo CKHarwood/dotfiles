@@ -2,9 +2,11 @@
 Dotfiles are stored here and hard linked to the appropriate path directories where possible. In some cases it is necessary to copy files over and keep them in sync manually.
 
 ## .bashrc
-Startup *Bash r*un *c*ommands. Documented in-file. Hard link: `~/.bashrc`.
+`~/.bashrc` (hard-linked to this file)
 
-This file may be over-customized for WSL today.
+**Bash r**un **c**ommands in startup. Most changes are documented in the file. A few personal changes documented below. 
+
+This file may be over-customized for WSL today, but since I do not currently have a non-WSL Linux environment I have not made a separate file for a vanilla bash environment.
 
 ### Custom aliases and commands set in `.bashrc`
 
