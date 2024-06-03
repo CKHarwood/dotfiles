@@ -27,7 +27,9 @@ This file may be over-customized for WSL today, but since I do not currently hav
 * `cdd`: `cd %userprofile%/Downloads`
 
 ## .dircolors
-In my .bashrc, the dircolors command sets up color output for ls and grep. The colors settings are stored in ~/.dircolors. Hard link: ~/.dircolors. 
+`~/.dircolors` (hard-linked to this file)
+
+The `dircolors` command in my `.bashrc` sets the color outputs for ls and grep. `.dircolors` stores those color settings.
 
 ## MYVIMRC
 
