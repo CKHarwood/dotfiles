@@ -40,7 +40,7 @@ set linebreak "Soft wrap text without breaking words or adding newlines
 " LINE FOLDING
 set foldenable
 set foldmethod=indent "Fold based on code indentation
-set foldlevelstart=5 "On file open, fold everything > 5 levels
+set foldlevelstart=10 "On file open, fold everything > 5 levels
 set foldcolumn=1 "Set one column to indicate fold information
 
 " SEARCH HIGHLIGHTING
