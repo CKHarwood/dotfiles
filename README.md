@@ -41,3 +41,7 @@ The `dircolors` command in my `.bashrc` sets the color outputs for ls and grep. 
 * `Tampermonkey_.eslintrc.json`: Configuration file for the linter in Tampermonkey browser extensions. Follow's eslint's deprecated JSON format. Paste the contents of this file into Tampermonkey > Settings > Editor > Custom Linter Config.
 
 I am not sure how to add or import custom rules to this file yet. At best, I can configure how the extension applies eslint rules it already recognizes.
+
+## TODO
+-[] C:\Users\USERNAME\AppData\Roaming\Microsoft\Templates\Normal.dotm
+-[] C:\Users\USERNAME\AppData\Roaming\Microsoft\Templates\NormalEmail.dotm
