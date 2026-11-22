@@ -121,9 +121,15 @@ alias la='ls -a'
 alias cdc='cd /mnt/c/Users/chrharw && ll'                                                                        
 alias cdp='cd /mnt/c/Users/chrharw/Projects'
 alias cdd='cd /mnt/c/Users/chrharw/Downloads'                                                                  
+
+## Change directory and list all contents
+cdl() {
+  command cd "$1"
+  command ls -alF
+}
                                                                                                                
 # Pretty print git logs
-function gitlog() {
+gitlog() {
   command git log --graph --abbrev-commit --decorate --format=format:'%C(blue)%h %C(bold green)(%ar)%C(bold yellow)%d %C(white)%s %C(dim 115)(%an)%C(reset)' --all
 }
 
