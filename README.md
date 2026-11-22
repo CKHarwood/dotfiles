@@ -16,6 +16,8 @@ This file may be over-customized for WSL today, but since I do not currently hav
 
 * `l`:  List visible files in the present working directory by column, with forward slashes to indicate subfolders (`ls -CF`)
 
+* `cdl`: `cd` into a directory and list all files (as in `ll` above)
+
 * `gitlog`: Print a pretty git log.
 
 #### Windows Subsystem for Linux (WSL) aliases
